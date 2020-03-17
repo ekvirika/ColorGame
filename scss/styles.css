@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background: #ffe4e1;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  place-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container h2 {
+  font-size: 30px;
+  color: #383838;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px;
+}
+
+.container .controls__area {
+  margin: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  color: #ffe4e1;
+  font-size: 20px;
+}
+
+.container .controls__area .btn {
+  background: #383838;
+  padding: 15px 25px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: #ffe4e1;
+  border-radius: 10px;
+}
+
+.container .controls__area .btn :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.container .controls__area .logic, .container .controls__area .pickColor {
+  width: 350px;
+  height: 70px;
+  padding: 20px;
+  background: #383838;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container .boxes {
+  width: 80%;
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+.container .boxes .box {
+  width: 30%;
+  background: #383838;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.border {
+  border: 10px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .controls__area {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
